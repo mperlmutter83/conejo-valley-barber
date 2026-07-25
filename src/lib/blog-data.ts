@@ -10,6 +10,60 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'best-straight-razor-shave-thousand-oaks',
+    title: "Best Straight Razor Shave in Thousand Oaks: What to Expect",
+    date: 'Jul 25, 2026',
+    category: "Shaving",
+    excerpt: "Looking for the best straight razor shave in Thousand Oaks? Here's what to expect, how it differs from a regular shave, and why it lasts longer.",
+    content: `A straight razor shave is one of those services that feels like a small luxury — until you've had one done right. Then it's hard to go back. If you're searching for the **best straight razor shave in Thousand Oaks**, here's what separates a real barbershop ritual from a quick cleanup, and what to expect when you book one at **Conejo Valley Barber**.
+
+## What is a straight razor shave?
+
+A straight razor shave uses a single, sharpened blade — the kind your grandfather (or great-grandfather) used — guided by a trained barber's hand. It delivers a noticeably closer shave than a cartridge razor, with smoother skin and less irritation for most guys.
+
+## What to expect during the appointment
+
+### 1. The hot towel
+The shave starts with a hot towel wrapped around your face. This softens the beard, opens the pores, and preps the skin so the blade glides instead of dragging.
+
+### 2. Pre-shave oil
+A light pre-shave oil is worked into the skin to add slip and protect against razor burn. If your skin tends to be reactive, this step alone makes a difference.
+
+### 3. The lather
+Your barber builds a warm lather with a brush and quality shave cream. This isn't foam from a can — it's dense, cushioned, and stays wet against the skin.
+
+### 4. The shave
+The main event. The straight razor is drawn in smooth, confident passes — typically with the grain, then across, then against for the closest finish. A skilled barber keeps the angle consistent so the blade does the work, not pressure.
+
+### 5. Aftercare
+A cool towel closes the pores, followed by a soothing balm. Most guys walk out with skin that feels tighter, smoother, and noticeably cleaner than any at-home shave.
+
+## How long does it take?
+
+Plan on **30–45 minutes** for a full straight razor shave at a traditional barbershop. It's not a quick stop — it's a small reset.
+
+## How long does it last?
+
+A straight razor shave lasts longer than a cartridge shave because the blade cuts below the skin line, not at it. Most clients get **3–5 days** of genuine smoothness before any stubble shows up.
+
+## Is it worth it?
+
+If you shave daily, deal with razor bumps, or just want a sharper look for a specific event, a straight razor shave pays for itself. Regular clients book it monthly as a stand-alone treatment, or pair it with a haircut for a full grooming reset.
+
+## What to look for in a barber
+
+- A clean, properly sterilized straight razor (not a shavette with disposable blades on autopilot)
+- A barber who adjusts pressure and angle based on your skin and beard
+- Hot towel and aftercare — not just a fast pass with a blade
+- Transparent pricing and easy booking
+
+At Conejo Valley Barber, our straight razor shave is a 30-minute service that includes the hot towel, pre-shave oil, lather, the shave itself, and aftercare. It's one of the most popular add-ons for guys who want a clean, traditional finish.
+
+## Book your shave
+
+📞 **Call (805) 719-7522** or [book an appointment online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm.`
+  },
+  {
     slug: 'how-often-should-men-get-a-haircut-barbers-expert-advice',
     title: "How Often Should Men Get a Haircut? Barber's Expert Advice",
     date: 'Jun 9, 2026',
