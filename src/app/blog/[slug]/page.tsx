@@ -33,11 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: post.seoTitle || post.title,
+    description: post.metaDescription || post.excerpt,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: post.seoTitle || post.title,
+      description: post.metaDescription || post.excerpt,
       type: 'article',
       publishedTime: post.date,
     },

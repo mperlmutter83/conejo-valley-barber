@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { blogPosts } from '@/lib/blog-data';
+import { getPublishedPosts } from '@/lib/blog-data';
 import { getPosts, toRenderPost, type RenderPost } from '@/lib/api';
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export const revalidate = 60;
 
 export default async function BlogPage() {
   const apiPosts = await getPosts(SITE_DOMAIN);
-  const posts: RenderPost[] = apiPosts.length > 0 ? apiPosts.map(toRenderPost) : blogPosts;
+  const posts: RenderPost[] = apiPosts.length > 0 ? apiPosts.map(toRenderPost) : getPublishedPosts();
   return (
     <>
       <section className="relative bg-zinc-900 py-20">

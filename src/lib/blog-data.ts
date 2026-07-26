@@ -1,7 +1,10 @@
 export interface BlogPost {
   slug: string;
   title: string;
+  seoTitle?: string;
+  metaDescription?: string;
   date: string;
+  publishedAt: string; // ISO date, e.g. "2026-08-04" — posts date-gate on this (America/Los_Angeles)
   category: string;
   excerpt: string;
   image?: string;
@@ -10,9 +13,382 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "kids-cut-to-adult-cut-when",
+    title: "When to Switch From a Kids Cut to an Adult Cut",
+    seoTitle: "When to Switch From a Kids Cut to an Adult Cut | CVB",
+    metaDescription: "When does a child outgrow the kids cut? Age, maturity, hair type, and the haircut itself \u2014 here's how to know when to make the switch.",
+    date: "Aug 18, 2026",
+    publishedAt: "2026-08-18",
+    category: "Kids Haircuts",
+    excerpt: "When does a child outgrow the kids cut? Age, maturity, hair type, and the haircut itself \u2014 here's how to know when to make the switch.",
+    content: `There's no hard age when a child becomes "too old" for a kids cut. Some 12-year-olds still need the patience and speed of a kids chair. Some 9-year-olds are ready for an adult cut. The transition is about maturity, hair type, and the kind of haircut they want — not the year on their birthday.
+
+Here's a practical framework to know when the switch makes sense.
+
+## What is a "kids cut"?
+
+A kids cut is built for short attention spans and fast turnarounds. It typically:
+
+- Uses clippers on a longer guard (no fading)
+- Takes 10–15 minutes
+- Doesn't include a straight razor or line-up
+- Skips the styling and product discussion
+- Often pairs with a chair, mirror, or tablet to keep the child still
+
+It's a great service for younger kids who need a clean, simple haircut without the time commitment.
+
+## What is an "adult cut"?
+
+An adult cut is the full barbershop service:
+
+- A consultation about style and length
+- Scissor work on top
+- Fading or tapering on the sides
+- A clean line-up at the sideburns, temple, and neck
+- Styling advice and product
+- 25–40 minutes in the chair
+
+It's designed for clients who can sit still, communicate what they want, and care about the details.
+
+## The signals it's time to switch
+
+### 1. They can sit still for 30 minutes
+The biggest practical factor. If they can ride out a full haircut without fidgeting, an adult cut is realistic.
+
+### 2. They start caring about the style
+When your kid asks for a specific cut — a fade, a particular length, a side part — that's a strong signal they want the adult experience. Adult cuts are about *style*. Kids cuts are about *speed*.
+
+### 3. Their hair type has changed
+Kids with curly, wavy, or thick hair often need real technique to manage. A kids cut starts to look unfinished as their hair gets more textured. An adult barber can work with that texture; a kids cut can't.
+
+### 4. They want a fade or design
+Fades, hard parts, and designs require the precision of an adult cut. If your kid is asking for any of these, it's time.
+
+### 5. They hit the awkward middle ground
+There's a stage — usually around 9–12 — where kids are too old for the kids chair but too young to feel comfortable in an adult context. That's actually a great time to do the transition with a barber who works with pre-teens.
+
+## How to make the transition smooth
+
+- **Book the first adult cut together.** Frame it as a milestone, not a chore.
+- **Bring reference photos.** Let them articulate what they want.
+- **Start simple.** A basic fade and a length on top is a good first cut. Skip straight razor line-ups and design work for the first visit.
+- **Talk to the barber beforehand.** A good barber will adjust pace, conversation, and chair height for a younger client without making a big deal of it.
+
+## The role of the parent
+
+For the first few adult cuts, it's fine to stay in the shop. Once they're comfortable, the "dad drops him off, picks him up" routine is part of the transition — it's how kids learn to manage their own appointments.
+
+## One thing to skip
+
+Don't push them into the adult chair before they're ready. A bad first adult cut — one where they couldn't sit still, the barber got frustrated, and the result was rushed — can sour them on the barbershop for years. Wait for the maturity signals.
+
+## Book a kid's first adult cut
+
+📞 **Call (805) 719-7522** or [book online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm. Tell us it's your kid's first adult cut — we'll meet them where they are.`
+  },
+  {
+    slug: "hot-towel-vs-express-shave",
+    title: "Hot Towel vs. Express Shave: Which Is Right for You?",
+    seoTitle: "Hot Towel vs. Express Shave: Which Is Right for You? | CVB",
+    metaDescription: "Hot towel shave or express shave? Here's the difference, the time commitment, and how to pick the right service for the kind of cleanup you actually need.",
+    date: "Aug 13, 2026",
+    publishedAt: "2026-08-13",
+    category: "Shaving",
+    excerpt: "Hot towel shave or express shave? Here's the difference, the time commitment, and how to pick the right service for the kind of cleanup you actually need.",
+    content: `Most barbershops offer two kinds of shaves: a **hot towel shave** (the full ritual) and an **express shave** (the quick cleanup). They're built for different needs, and choosing the wrong one either wastes your time or wastes your money. Here's how to pick the right service.
+
+## What is a hot towel shave?
+
+A hot towel shave is the full traditional barbershop ritual. It includes:
+
+- Hot towel prep to soften the beard and open pores
+- Pre-shave oil for glide and skin protection
+- Warm lather built with a brush
+- Straight razor shave with multiple passes
+- Cool towel to close pores
+- Aftercare balm
+
+Plan on **30–45 minutes.** The result is the closest possible shave, smoother skin, and a small reset that most clients describe as relaxing.
+
+## What is an express shave?
+
+An express shave is a quick cleanup pass — usually with a straight razor or shavette — meant to clean up the neck, sideburns, and any rough spots without the full ritual.
+
+It typically includes:
+- A quick lather or pre-shave cream
+- One or two passes with the blade
+- A wipe-down and aftershave splash
+
+Plan on **10–15 minutes.** It's a maintenance service, not a full treatment.
+
+## Which one is right for you?
+
+### Choose a hot towel shave if:
+- You want the closest possible shave
+- You're prepping for a wedding, date, or event
+- Your skin is reactive and you need the prep to avoid irritation
+- You want a relaxing reset, not just a cleanup
+- You're a regular once-a-month client
+
+### Choose an express shave if:
+- You just had a haircut and want the neckline and sideburns cleaned up
+- You're short on time between meetings
+- You want a quick tidy-up before or after work
+- You're pairing the shave with a haircut and don't need a full second service
+
+### The hybrid most clients do
+Most regulars at a barbershop do a **full haircut + express shave** every 2–3 weeks. The full shave is reserved for once a month or for special occasions. That's a reasonable rhythm for most men.
+
+## How long does each shave last?
+
+- **Hot towel shave:** 3–5 days of genuine smoothness because the blade cuts below the skin line.
+- **Express shave:** 1–3 days, depending on your beard growth. It's a finish, not a deep shave.
+
+If you're trying to extend a clean look between haircuts, the hot towel version is the better investment.
+
+## Cost and value
+
+Express shaves are typically cheaper — often half the price of a full hot towel shave. The hot towel version is more expensive because it takes more time, more product, and more skill.
+
+If you're on a budget, the express shave is the right call. If you're optimizing for skin comfort and how long it lasts, the hot towel wins.
+
+## Talking to your barber
+
+If you're unsure, just describe what you need:
+
+- "I want a clean shave for a wedding this weekend." → Hot towel
+- "I just want my neck cleaned up after the haircut." → Express
+- "I want the closest shave possible." → Hot towel
+- "I have 15 minutes between meetings." → Express
+
+At Conejo Valley Barber, we offer both — and we can usually combine them with a haircut in a single visit if you want to keep things efficient.
+
+## Book a shave
+
+📞 **Call (805) 719-7522** or [book online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm.`
+  },
+  {
+    slug: "fade-vs-taper-difference",
+    title: "Fade vs. Taper: What's the Difference and Which Should You Ask For?",
+    seoTitle: "Fade vs. Taper: What's the Difference? | Conejo Valley Barber",
+    metaDescription: "Fade vs. taper \u2014 what's the difference, which is more dramatic, and which is right for you. A plain-English guide from a Thousand Oaks barbershop.",
+    date: "Aug 11, 2026",
+    publishedAt: "2026-08-11",
+    category: "Fades",
+    excerpt: "Fade vs. taper \u2014 what's the difference, which is more dramatic, and which is right for you. A plain-English guide from a Thousand Oaks barbershop.",
+    content: `If you've ever used "fade" and "taper" interchangeably, you're not alone — most guys do. They're related, but they describe different cuts. Here's the clean breakdown of **fade vs. taper**, what each one looks like, and which one to ask for at your next appointment.
+
+## The one-line difference
+
+- **Fade:** A gradient that goes from very short (often skin) at the bottom to longer hair up top. The contrast is dramatic.
+- **Taper:** A subtle shortening of hair at the neck and around the ears. The contrast is gentle.
+
+That's the whole distinction. Everything else is variation.
+
+## Fade explained
+
+A fade starts short at the bottom of the sides and back, and gradually blends into longer hair moving up. The "fade" refers to the gradient itself — the hair seems to fade away as it gets shorter.
+
+### Types of fades
+
+- **Low fade:** The fade starts just above the ear. Subtle, professional, works in most settings.
+- **Mid fade:** The fade starts about halfway up the head. Balanced — neither too subtle nor too dramatic.
+- **High fade:** The fade starts near the temple. Bold, contrasting, modern.
+- **Skin fade (or bald fade):** The bottom of the fade is shaved to skin. The most dramatic option.
+
+A fade is usually paired with a clear line-up (clean edges at the temple, sideburn, and neck) and some length on top for contrast.
+
+### Who a fade is for
+
+Guys who want a modern, sharp look and are willing to keep up with it. Fades look best in weeks 1–2 and start losing definition around week 3, so they need frequent touch-ups if you want them tight.
+
+## Taper explained
+
+A taper is a more conservative shortening of hair at the neck and around the ears. It doesn't extend high on the head — it just neatens the perimeter.
+
+### Types of tapers
+
+- **Standard taper:** Hair gradually shortens near the neckline and sideburns, but stays the same length above.
+- **Tapered neckline:** Just the neck is tapered (the back of the head hairline is shaped, not squared off).
+- **Tapered sideburns:** Just the sideburns are tapered, blending into the side hair.
+
+A taper doesn't have "high/mid/low" the way a fade does. It's a finish, not a structural cut.
+
+### Who a taper is for
+
+Guys who want a clean, professional look without the contrast of a fade. Tapers age well — they grow out soft, so most clients can go 3–4 weeks between visits without looking rough.
+
+## Fade vs. taper: at a glance
+
+| | Fade | Taper |
+|---|---|---|
+| Where it lives | Sides and back, often extending higher | Neck and around the ears |
+| Contrast | Dramatic | Subtle |
+| Boldness | Modern, statement | Classic, conservative |
+| Maintenance | Higher (2–3 weeks) | Lower (3–4 weeks) |
+| Best for | Streetwear, modern styles, sharp edge | Office, conservative cuts, longer hair |
+
+## Which one should you ask for?
+
+### Choose a fade if:
+- You want a sharp, modern look
+- You don't mind coming in every 2–3 weeks
+- Your hair is short enough on top to show the contrast
+- You want a clear visual edge
+
+### Choose a taper if:
+- You want something clean and professional
+- You want to stretch visits to 3–4 weeks
+- You have medium to longer hair on top
+- You don't want a dramatic change from your current cut
+
+### Or combine them:
+A fade on the sides with a tapered neckline is a popular hybrid — sharp up top, soft at the collar. Most barbershops do this by default.
+
+## What to say at the barber
+
+- "Mid fade on the sides, tapered at the neck."
+- "Low fade, please — nothing too dramatic."
+- "Just a taper around the ears and neck, no fade."
+
+If you're unsure, ask your barber to talk you through it. They can show you the difference on the spot using a trimmer.
+
+## Book your fade or taper
+
+📞 **Call (805) 719-7522** or [book online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm.`
+  },
+  {
+    slug: "low-maintenance-mens-haircuts-at-4-weeks",
+    title: "Low-Maintenance Men's Haircuts That Look Good at 4 Weeks",
+    seoTitle: "Low-Maintenance Men's Haircuts That Look Good at 4 Weeks | CVB",
+    metaDescription: "These low-maintenance men's haircuts hold their shape for 4 weeks between visits. Styles, lengths, and what to ask your barber for.",
+    date: "Aug 6, 2026",
+    publishedAt: "2026-08-06",
+    category: "Haircuts",
+    excerpt: "These low-maintenance men's haircuts hold their shape for 4 weeks between visits. Styles, lengths, and what to ask your barber for.",
+    content: `Most guys don't have time to visit the barbershop every two weeks. The good news: with the right cut, you can stay sharp for **four weeks** between appointments. The trick is picking a style that ages well, not one that looks great on day one and falls apart by day ten.
+
+## What makes a haircut "low-maintenance"?
+
+Three things:
+
+1. **Length on top** that's long enough to comb back into place as it grows out
+2. **A fade or taper** that blends gradually, so there's no obvious "line" where the cut has grown out
+3. **A shape** that doesn't depend on precise lines to look intentional
+
+The opposite is a tight buzz with a hard part — both need touch-ups every 1–2 weeks.
+
+## The best low-maintenance styles
+
+### The textured crop
+Short, scissor-cut on top with a fade on the sides. The texture means it grows out evenly, and a little length on top gives you room to push it around as it grows. Works with straight, wavy, or slightly curly hair.
+
+### The classic side part
+A timeless cut with a defined part, slightly longer on top, and a taper (not a hard fade) on the sides. The taper grows out soft — no harsh line — so the cut still looks intentional at week four.
+
+### The mid fade with length on top
+A mid fade (blending starts halfway up the head) holds its shape better than a high fade or skin fade. The longer top gives you styling room, and the fade's softening gradient means it doesn't visibly "end" as it grows.
+
+### The scissor cut (no clippers)
+A pure scissor cut with light tapering at the neck and sides. It grows out the most evenly of any cut because there's no clipper line to grow past. Best for medium to longer hair.
+
+### The short textured top with a low taper
+A short, choppy top with a low taper at the neck and around the ears. The taper is subtle enough that growth doesn't reveal a line for several weeks.
+
+## What to ask your barber
+
+Bring this list to your appointment:
+
+- "I want a cut that holds its shape for 4 weeks."
+- "Use a [low/mid] fade, not a skin fade."
+- "Leave enough on top to style without product if I skip a day."
+- "Show me what it'll look like in 3–4 weeks, not just today."
+
+A good barber will adjust the cut to your hair type. Thicker hair can carry more weight as it grows; finer hair needs less length on top to avoid looking flat.
+
+## The styling piece
+
+Even low-maintenance cuts benefit from a small amount of product — sea salt spray, matte clay, or a light pomade. The point isn't to look done-up; it's to give the hair direction so it doesn't fall flat.
+
+If you skip product entirely, ask your barber for a "wash-and-wear" cut. They'll keep the length manageable and the shape forgiving so it looks clean even when you do absolutely nothing.
+
+## How to extend the cut between visits
+
+- Wash every 2–3 days, not every day — daily washing dries hair out and makes it harder to style
+- Use a light conditioner or leave-in to keep hair from getting frizzy as it grows
+- Trim any neck growth with a beard trimmer on guard 2 if you want to stretch one more week
+
+## Book a low-maintenance cut
+
+📞 **Call (805) 719-7522** or [book online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm.`
+  },
+  {
+    slug: "how-to-communicate-with-your-barber",
+    title: "How to Communicate With Your Barber (So You Get the Cut You Want)",
+    seoTitle: "How to Communicate With Your Barber (Get the Cut You Want) | CVB",
+    metaDescription: "The haircut you walk out with depends on how well you communicate. Here's the exact language to use with your barber \u2014 and what to bring to your appointment.",
+    date: "Aug 4, 2026",
+    publishedAt: "2026-08-04",
+    category: "Barber",
+    excerpt: "The haircut you walk out with depends on how well you communicate. Here's the exact language to use with your barber \u2014 and what to bring to your appointment.",
+    content: `The most common reason a haircut doesn't turn out the way you pictured isn't bad technique — it's a communication gap. You walk in with one idea, your barber imagines another, and the result is an awkward compromise. Here's how to close that gap and walk out with the cut you actually wanted.
+
+## Bring reference photos (not just one)
+
+One photo gives your barber a single point of reference. **Three to five photos** give context — the front, the side, the back, and variations in length. They can be from anywhere: Instagram, Pinterest, a celebrity, or the next guy in the chair.
+
+What you're communicating isn't "give me this exact haircut" — it's "I want this shape, this length, this kind of finish." Your barber will adapt it to your hair type, face shape, and what's actually possible.
+
+## Use specific length language, not vibes
+
+Saying "a little off the top" is one of the riskiest sentences in any barbershop. It means completely different things to different barbers. Specific language works better:
+
+- **Number on the sides:** "A 2 on the sides, faded to skin at the bottom."
+- **Length on top:** "About three inches on top, hand-cut."
+- **Specific landmark:** "Leave enough on top to comb back."
+- **Reference style:** "Like a classic side part, but with a mid fade instead of a taper."
+
+If you don't know the numbers, point to a spot on your head and say "this length here." Visual references work.
+
+## Describe your routine
+
+Your barber isn't just cutting for today — they're cutting for how you actually maintain your haircut between visits. If you don't use product, don't want to blow-dry, and never touch a comb, a style that needs 10 minutes of styling every morning won't survive the week.
+
+Tell your barber:
+- How much time you actually spend on your hair
+- Whether you use product (and what)
+- How often you want to come back
+
+That information is gold. A good barber will adjust the cut to fit your real life, not your imagined one.
+
+## Say what you don't want
+
+Most clients talk about what they want. Few talk about what they don't. Both matter. If your last haircut was too short on the sides, say so. If a certain style didn't work with your cowlick, mention it. Negative feedback is just as useful as positive reference.
+
+## Ask questions back
+
+A good barber will ask clarifying questions. If yours doesn't, prompt them:
+- "What do you think will work with my hair type?"
+- "How would you adjust this for my cowlick?"
+- "How often would I need to come back to keep this looking sharp?"
+
+The best cuts are a conversation, not an order.
+
+## When in doubt, build a relationship
+
+The first cut with a new barber is rarely the best cut. Once they know your hair, your preferences, and your face shape, every cut after that gets faster and more accurate. That's why regulars at a barbershop almost always look better than guys who hop around.
+
+At Conejo Valley Barber, we keep notes on every regular client — preferred lengths, fade preference, styling routine, the lot. That way, when you walk in, we already know what works.
+
+## Ready for your next cut?
+
+📞 **Call (805) 719-7522** or [book online](https://www.conejovalleybarber.com/contact). We're at **60 Houston Dr., Thousand Oaks, CA 91360**, open Mon–Fri 10am–7pm and Sat 10am–5pm.`
+  },
+  {
     slug: 'best-straight-razor-shave-thousand-oaks',
     title: "Best Straight Razor Shave in Thousand Oaks: What to Expect",
     date: 'Jul 25, 2026',
+    publishedAt: '2026-07-25',
     category: "Shaving",
     excerpt: "Looking for the best straight razor shave in Thousand Oaks? Here's what to expect, how it differs from a regular shave, and why it lasts longer.",
     content: `A straight razor shave is one of those services that feels like a small luxury — until you've had one done right. Then it's hard to go back. If you're searching for the **best straight razor shave in Thousand Oaks**, here's what separates a real barbershop ritual from a quick cleanup, and what to expect when you book one at **Conejo Valley Barber**.
@@ -67,6 +443,7 @@ At Conejo Valley Barber, our straight razor shave is a 30-minute service that in
     slug: 'how-often-should-men-get-a-haircut-barbers-expert-advice',
     title: "How Often Should Men Get a Haircut? Barber's Expert Advice",
     date: 'Jun 9, 2026',
+    publishedAt: '2026-06-09',
     category: 'Haircuts',
     excerpt: "If you've ever wondered how often you should get a haircut, you're not alone. The right schedule depends on your haircut style, hair type, lifestyle, and how sharp you want to look.",
     image: 'https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=800&h=500&fit=crop',
@@ -105,6 +482,7 @@ If you're unsure how often you should come in, we'll recommend a schedule based 
     slug: 'hot-towel-shave-the-ultimate-grooming-experience',
     title: 'Hot Towel Shave: The Ultimate Grooming Experience',
     date: 'Jun 2, 2026',
+    publishedAt: '2026-06-02',
     category: 'Shaving',
     excerpt: "A hot towel shave is more than a quick cleanup—it's a classic barbershop ritual that delivers a noticeably closer shave, smoother skin, and a relaxing reset.",
     image: 'https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=800&h=500&fit=crop',
@@ -139,6 +517,7 @@ A hot towel shave is ideal for anyone who wants a sharper look and a more comfor
     slug: 'best-kids-haircuts-in-thousand-oaks-parents-guide',
     title: "Best Kids Haircuts in Thousand Oaks: Parent's Guide",
     date: 'Apr 29, 2026',
+    publishedAt: '2026-04-29',
     category: 'Kids Haircuts',
     excerpt: "Finding the right kids haircut in Thousand Oaks is about more than style—it's about comfort, confidence, and a smooth experience for both parents and children.",
     image: 'https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&h=500&fit=crop',
@@ -183,6 +562,7 @@ Most families schedule kids haircuts every **3 to 6 weeks**, depending on the st
     slug: 'newbury-park-barber-shops-complete-local-guide',
     title: 'Newbury Park Barber Shops: Complete Local Guide',
     date: 'Apr 11, 2026',
+    publishedAt: '2026-04-11',
     category: 'Barber',
     excerpt: "If you're searching for the best Newbury Park barber shops, you want more than a quick haircut—you want consistent quality, a clean shop, and barbers who listen.",
     image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&h=500&fit=crop',
@@ -218,6 +598,7 @@ Many clients prefer simple online booking and reliable scheduling.
     slug: 'haircut-etiquette-do-you-need-to-tip-your-barber',
     title: 'Haircut Etiquette: Do You Need to Tip Your Barber?',
     date: 'Apr 4, 2026',
+    publishedAt: '2026-04-04',
     category: 'Barber',
     excerpt: "Wondering whether you should tip your barber after a haircut? You're not alone. Here's a clear guide to barber tipping etiquette.",
     image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&h=500&fit=crop',
@@ -264,6 +645,7 @@ Both are perfectly acceptable. **Cash tips** are often preferred because they're
     slug: 'westlake-village-barber-where-to-get-the-cleanest-fade',
     title: 'Westlake Village Barber: Where to Get the Cleanest Fade',
     date: 'Mar 27, 2026',
+    publishedAt: '2026-03-27',
     category: 'Fades',
     excerpt: "If you're searching for a Westlake Village barber who can deliver a truly clean fade—crisp lines, smooth blending, and a finish that looks sharp—your choice matters.",
     image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=800&h=500&fit=crop',
@@ -308,6 +690,7 @@ A softer alternative that keeps more hair on the sides.
     slug: 'best-barber-in-conejo-valley-what-to-look-for-in-2026',
     title: 'Best Barber in Conejo Valley: What to Look For in 2026',
     date: 'Mar 20, 2026',
+    publishedAt: '2026-03-20',
     category: 'Barber',
     excerpt: "Choosing the best barber in Conejo Valley in 2026 is about more than a quick haircut. Today's clients expect consistent craftsmanship and clean service standards.",
     image: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&h=500&fit=crop',
@@ -345,6 +728,7 @@ At **Conejo Valley Barber**, we focus on what matters most: consistent quality, 
     slug: 'how-to-get-the-best-mens-haircut',
     title: "How to get the best men's haircut?",
     date: 'Feb 5, 2024',
+    publishedAt: '2024-02-05',
     category: 'Haircuts',
     excerpt: "A great haircut is one of the most immediate ways a man can express his personal style and confidence. Here's how to achieve that perfect trim.",
     image: 'https://images.unsplash.com/photo-1620122830784-c29a955e0c77?w=800&h=500&fit=crop',
@@ -388,10 +772,32 @@ A haircut is much more than just a menial task; it's a form of self-expression a
   },
 ];
 
-export function getPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find(post => post.slug === slug);
+/** Current date in America/Los_Angeles as YYYY-MM-DD. */
+function getTodayLA(): string {
+  return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 }
 
+/**
+ * Only posts whose publishedAt is <= today (America/Los_Angeles).
+ * Use for all public-facing listings and lookups so scheduled posts
+ * stay invisible until their date.
+ */
+export function getPublishedPosts(): BlogPost[] {
+  const today = getTodayLA();
+  return blogPosts.filter(post => post.publishedAt <= today);
+}
+
+/** Published post by slug — undefined if not found or not yet published. */
+export function getPostBySlug(slug: string): BlogPost | undefined {
+  return getPublishedPosts().find(post => post.slug === slug);
+}
+
+/** Slugs of published posts (generateStaticParams). */
 export function getAllPostSlugs(): string[] {
-  return blogPosts.map(post => post.slug);
+  return getPublishedPosts().map(post => post.slug);
+}
+
+/** ALL posts (published + scheduled) — /api/posts feed & admin only. */
+export function getAllPosts(): BlogPost[] {
+  return blogPosts;
 }

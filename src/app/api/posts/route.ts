@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { blogPosts } from '@/lib/blog-data';
+import { getAllPosts } from '@/lib/blog-data';
 
 /**
  * GET /api/posts — machine-readable blog feed for the Yes Crew CRM.
@@ -12,13 +12,6 @@ import { blogPosts } from '@/lib/blog-data';
 
 export const dynamic = 'force-dynamic';
 
-/** Parse the display date ('Apr 29, 2026') into YYYY-MM-DD, or null. */
-function toIsoDate(dateStr: string): string | null {
-  const ms = Date.parse(dateStr);
-  if (Number.isNaN(ms)) return null;
-  return new Date(ms).toISOString().slice(0, 10);
-}
-
 /** Current date in America/Los_Angeles as YYYY-MM-DD. */
 function getTodayLA(): string {
   return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
@@ -27,19 +20,16 @@ function getTodayLA(): string {
 export async function GET() {
   const today = getTodayLA();
 
-  const response = blogPosts.map((post) => {
-    const publishedAt = toIsoDate(post.date);
-    return {
-      slug: post.slug,
-      title: post.title,
-      category: post.category,
-      date: post.date,
-      publishedAt,
-      // Future-dated posts report as scheduled so the CRM matches intent.
-      status: publishedAt && publishedAt <= today ? 'published' : 'scheduled',
-      url: `https://www.conejovalleybarber.com/blog/${post.slug}`,
-    };
-  });
+  const response = getAllPosts().map((post) => ({
+    slug: post.slug,
+    title: post.title,
+    category: post.category,
+    date: post.date,
+    publishedAt: post.publishedAt,
+    // Future-dated posts report as scheduled so the CRM matches intent.
+    status: post.publishedAt <= today ? 'published' : 'scheduled',
+    url: `https://www.conejovalleybarber.com/blog/${post.slug}`,
+  }));
 
   return NextResponse.json(response);
 }
