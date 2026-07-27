@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import HoursLines from '@/components/HoursLines';
 
 export default function Home() {
   const services = [
@@ -64,8 +65,7 @@ export default function Home() {
               <p className="text-white text-xl mb-2">60 Houston Dr.</p>
               <p className="text-gray-400 mb-6">Thousand Oaks, CA 91360</p>
               <h3 className="text-amber-500 font-semibold mb-4">Hours</h3>
-              <p className="text-gray-400">Monday – Friday: 10am – 7pm</p>
-              <p className="text-gray-400">Saturday: 10am – 5pm</p>
+              <HoursLines className="text-gray-400" />
             </div>
           </div>
         </div>

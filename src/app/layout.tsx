@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getHours, hoursToSchema } from '@/lib/hours';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,11 +37,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const hours = await getHours();
   return (
     <html lang="en">
       <head>
@@ -79,20 +81,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 "latitude": 34.1808,
                 "longitude": -118.8756
               },
-              "openingHoursSpecification": [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                  "opens": "10:00",
-                  "closes": "19:00"
-                },
-                {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": "Saturday",
-                  "opens": "10:00",
-                  "closes": "17:00"
-                }
-              ],
+              "openingHoursSpecification": hoursToSchema(hours),
               "priceRange": "$$",
               "image": "https://conejovalleybarber.com/og-image.jpg"
             })
