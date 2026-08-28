@@ -1681,8 +1681,8 @@ Conejo Valley Barber provides haircuts, shaves, fades, and kids' cuts across Tho
   {
     slug: 'how-to-talk-to-your-barber',
     title: "How to Talk to Your Barber (And Get the Cut You Actually Want)",
-    date: 'Aug 28, 2026',
-    publishedAt: '2026-08-28',
+    date: 'Aug 27, 2026',
+    publishedAt: '2026-08-27',
     category: "Barber",
     excerpt: "Most haircut frustrations come from miscommunication. Here's a practical guide to talking to your barber so you get the cut you actually want.",
     content: `Most haircut frustrations come from miscommunication, not barber skill. You walk out with something you didn't ask for, or something you didn't quite mean, and the barber walks away thinking they nailed it. This guide is for anyone who wants to get the haircut they actually want — without awkwardness, vague pointing, or hoping for the best.
