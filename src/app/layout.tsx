@@ -46,6 +46,22 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* RFM site data - pushed before GTM loads */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  rfm: {
+    schema_version: "1.0",
+    site_id: "conejo_valley_barber",
+    provider_id: "490116de-edbc-48c9-90c8-ab1c675e567e",
+    provider_name: "Conejo Valley Barber",
+    service_category: "barber",
+    market: "conejo_valley"
+  }
+});`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
